@@ -37,7 +37,7 @@ df = pd.read_pickle(path)
 
 print('####', df.shape[1])
 
-j = 0
+j = 74#0
 for i in range(n-df.shape[1]): 
     j += 1
     if j > 74:
