@@ -201,7 +201,6 @@ Why did the computer go to the doctor? Because it had a virus.
 Why did the computer go to the doctor? Because it had a virus.  
 Why did the computer go to the doctor? Because it had a virus.  
 Why did the computer go to the doctor? It had a byte.  
-Why did the cookie go to the doctor? Because it felt crumbly. 
 Why did the cookie go to the doctor? Because it felt crumbly.  
 Why did the cookie go to the doctor? Because it felt crumbly.  
 Why did the cookie go to the doctor? Because it felt crumbly.  
@@ -215,7 +214,8 @@ Why did the cookie go to the doctor? Because it felt crumbly.
 Why did the cookie go to the doctor? Because it felt crumbly.  
 Why did the cookie go to the doctor? Because it felt crumbly.  
 Why did the cookie go to the doctor? Because it felt crumbly.  
-Why did the cookie go to the doctor? Because it was feeling crumbly  
+Why did the cookie go to the doctor? Because it felt crumbly.  
+Why did the cookie go to the doctor? Because it was feeling crumbly.  
 Why did the cookie go to the doctor? Because it was feeling crumbly.  
 Why did the cookie go to the doctor? Because it was feeling crumbly.  
 Why did the cookie go to the doctor? Because it was feeling crumbly.  
@@ -268,7 +268,7 @@ Why did the cookie go to the doctor? Because it was feeling crumbly.
 Why did the cookie go to the doctor? It was feeling crumbly.  
 Why did the cookie go to the gym? To get a little crumbly.  
 Why did the cookie go to the gym? To get a little crumbly.  
-Why did the cookie go to the gym? To get a-cookie-dized  
+Why did the cookie go to the gym? To get a-cookie-dized.  
 Why did the cookie go to the gym? To get a-cookie-dized.  
 Why did the cookie go to the gym? To get a-cookie-dized.  
 Why did the cookie go to the hospital? Because it felt crumbly.  
@@ -418,7 +418,6 @@ Why did the robot go on a diet? Because it was getting a little rusty.
 Why did the robot go to school? To learn some new circuits.  
 Why did the robot go to school? To learn some new circuits.  
 Why did the robot go to school? To learn some new circuits.  
-Why did the scarecrow win an award? Because he was outstanding in his field. 
 Why did the scarecrow win an award? Because he was outstanding in his field.  
 Why did the scarecrow win an award? Because he was outstanding in his field.  
 Why did the scarecrow win an award? Because he was outstanding in his field.  
@@ -558,7 +557,8 @@ Why did the scarecrow win an award? Because he was outstanding in his field.
 Why did the scarecrow win an award? Because he was outstanding in his field.  
 Why did the scarecrow win an award? Because he was outstanding in his field.  
 Why did the scarecrow win an award? Because he was outstanding in his field.  
-Why did the shark go to the doctor? Because it had a case of the "bites"  
+Why did the scarecrow win an award? Because he was outstanding in his field.  
+Why did the shark go to the doctor? Because it had a case of the "bites".  
 Why did the skeleton go to the party alone? He had no body to dance with.  
 Why did the skeleton go to the party? To get a little bit more "body" into his social life.  
 Why did the skeleton go to the party? To get a little bit more "body" into his social life.  
@@ -892,13 +892,13 @@ Why was the computer cold? Because it left its Windows open.
 Why was the computer cold? Because it left its Windows open.  
 Why was the computer cold? Because it left its Windows open.  
 Why was the computer cold? Because it left its Windows open.  
-Why was the computer cold? It left its Windows open  
+Why was the computer cold? It left its Windows open.  
 Why was the computer cold? It left its Windows open.  
 Why was the computer cold? It left its Windows open.  
 Why was the computer cold? It left its Windows open.  
 Why was the keyboard cold? Because it left its Windows open.  
-Why was the math book sad? Because it had too many problems. 
-Why was the math book sad? Because it had too many problems. 
+Why was the math book sad? Because it had too many problems.  
+Why was the math book sad? Because it had too many problems.  
 Why was the math book sad? Because it had too many problems.  
 Why was the math book sad? Because it had too many problems.  
 Why was the math book sad? Because it had too many problems.  
