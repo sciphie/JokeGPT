@@ -56,7 +56,7 @@ for i in range(n-df.shape[1]):
     df = pd.read_pickle(path)
     # bot = ChatGPT()
     # prompt_number = (i+3)%len(prompts)
-    prompt_numbers_left = [3,7,1,2,3,4,5,6,7,8,9]
+    prompt_numbers_left = [7,7,7,7,2,2,2,3,3,4,4]
     prompt_number = random.choice(prompt_numbers_left)
     print(prompt_number)
     prompt = prompts[prompt_number]
