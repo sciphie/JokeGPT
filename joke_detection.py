@@ -97,8 +97,20 @@ no_jokes = [
     "Why did the astronaut go to outer space? To see the moon.",
     #"Why did the man put bananas in the blender? He wanted to make a smoothie.", #####
     "Why don't schoolboys fight each other? They don't have the guts.",
-    "What do you call an man in a vest? A vest wearer.", #################
+    "What do you call an man in a vest? A vest wearer.", ################
 ]
+
+no_jokes = [
+#    "Why was the computer cold? Because the heater was broken.",
+#    "Why was the computer cold? Because it was winter.",
+#    "Why was the student cold? Because the heater was broken.",
+#    "Why was the student cold? Because it was winter.",
+#    "Why did the teacher go to the doctor? Because he wasn't peeling well.",
+    "Why don't oysters give to charity? Because they have no money.",
+
+
+]
+
    
 #    "Why did the man put his money in the freezer? He wanted cold hard cash.",
  #   "Why don't seagulls fly over the bay? Because then they'd be bagels.",
