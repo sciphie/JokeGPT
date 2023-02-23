@@ -71,7 +71,63 @@ jokes_onesen = [
     "An alligator in a vest is called an investigator.",
 ]
 
-no_jokes = [
+noj1 = [ # without wordplay, but with picutre
+    "Why did the scarecrow win an award? Because he did very good work.",
+    "Why did the tomato turn red? Because it had a lot sun recently.",
+    "Why was the math book sad? Because it was a rainy day.",
+    "Why don't scientists trust atoms? Because they tend to lie.",
+    "Why did the cookie go to the doctor? Because it was feeling unwell.",
+    "Why couldn't the bicycle stand up by itself? Because it didn't have racks.",
+    "Why did the frog call his insurance company? He had a scratch in his car.",
+    #"Why did the oyster cross the playground? To get to the other slide.", ###
+    "Why was the computer cold? Because the heater was broken.",
+    "Why did the hipster burn his tongue? He drank hot coffee.",
+    "Why don't oysters give to charity? Because they have no money.",
+    "Why did the computer go to the doctor? Because it had a sick.",
+    "Why did the banana go to the doctor? Because it was sick.",
+    "Why did the coffee file a police report? Because it got robbed.",
+    "Why did the golfer bring two pairs of pants? In case one gets damaged.", ###
+    # "Why did the man put his money in the freezer? He wanted cold hard cash.",
+    "Why don't seagulls fly over the bay? Because then are mostly living in ports.",
+    #"Why did the chicken go to the seance? To talk to the other side.",
+    "Why was the belt sent to jail? Because it stole in a store.",
+   # "Why did the chicken cross the road? To get to the other side.",
+    "Why did the computer go to the doctor? Because it had a headache.",
+    "Why did the chicken go to outer space? To see the moon.",
+   # "Why did the man put bananas in the blender? He wanted to make liquid assets.",
+    "Why don't skeletons fight each other? They are dead already.",
+    "What do you call an alligator in a vest? An investigator.",
+]
+
+noj2 = [ # without picture
+    "Why did the scientist win an award? Because he did very good work.",
+    "Why did the man turn red? Because he saw the neighbour dressing.",#"Why did the tomato turn red? Because it saw the salad dressing.",
+    "Why was the child sad? Because it had many problems.",
+    "Why don't scientists trust journalists? Because they make up everything.",
+    "Why did the woman go to the doctor? Because it was feeling crumbly.",
+    "Why couldn't the man stand up by itself? Because he was drunk.",
+    "Why did the driver call his insurance company? He had a jump in his car.",
+    "Why did the kid cross the playground? To get to the other slide.",
+    "Why was the student cold? Because it was winter.",
+    "Why did the coworker burn his tongue? He drank his coffee too hot.",
+    "Why don't millionaires give to charity? Because they're selfish.",
+    "Why did the man go to the doctor? Because it had a virus.",
+    "Why did the teacher go to the doctor? Because it wasn't peeling well.",
+    "Why did the driver file a police report? Because it got robbed.",
+    "Why did the athlete bring two pairs of pants? In case one gets dirty.",
+    "Why did the man put his money in the freezer? To hide it from intruders.",
+    "Why don't pigeon fly over the bay? Because they mostly live in cities.",
+    "Why did the daughter go to the seance? To talk to her mother.",
+    "Why was the cashier sent to jail? Because she held up a dress.",
+    "Why did the man cross the road? To get to the other side.",
+    "Why did the man go to the doctor? Because it had a bite.",
+    "Why did the astronaut go to outer space? To see the moon.",
+    "Why did the man put bananas in the blender? He wanted to make a smoothie.", 
+    "Why don't schoolboys fight each other? They don't have the guts.",
+    "What do you call an man in a vest? A vest wearer.", 
+]
+
+# no_jokes = [
     "Why did the scarecrow win an award? Because he did very good work.",
     "Why did the tomato turn red? Because it had a lot sun recently.",
     "Why was the novel sad? Because it had too many problems.",
@@ -131,20 +187,12 @@ no_jokes = [
 ]
 
 
-all = jokes + jokes_onesen + no_jokes
+all = jokes + jokes_onesen # + noj1 + noj2
 random.shuffle(all)
-#print(all)
-#    "Why did the man put his money in the freezer? He wanted cold hard cash.",
- #   "Why don't seagulls fly over the bay? Because then they'd be bagels.",
-    
-  #  "Why did the man put his money in the blender? He wanted to make liquid assets.",
-
-
-#prompts = [F"Can you explain why this joke is funny: \n\n {j}" for j in jokes]
 
 #bot = ChatGPT()
 #n = 1100 # number of generated jokes 
-path = 'joke_detection_allshuffle'############################################################################
+path = 'joke_detection_new'############################################################################
 try:
     df = pd.read_pickle(path)
 except:
@@ -179,6 +227,7 @@ for elem in all: ###############################################################
     prompt = F'What kind of sentence is that: {elem}'
     
     try:
+        api.refresh_chat_page()
         resp = api.send_message(prompt) 
         # print(i ==df.shape[1]+1) # this does not work whith multiple iterations
         print(F"{i}: {prompt} - {resp}")
