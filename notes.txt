@@ -1,0 +1,7 @@
+Todo 
+
+1. rewrite Jokes to unfunny
+    - find huge dataset with puns 
+    - assumption: if gpt rewrites the joke, it will keep its meaning, but loose the joke 
+    - build pairs of (joke, rewritten joke). do a pca from that. identify joke direction 
+    - 
