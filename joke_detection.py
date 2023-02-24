@@ -127,7 +127,7 @@ noj2 = [ # without picture
     "What do you call an man in a vest? A vest wearer.", 
 ]
 
-# no_jokes = [
+no_jokes = [
     "Why did the scarecrow win an award? Because he did very good work.",
     "Why did the tomato turn red? Because it had a lot sun recently.",
     "Why was the novel sad? Because it had too many problems.",
@@ -187,7 +187,7 @@ noj2 = [ # without picture
 ]
 
 
-all = jokes + jokes_onesen # + noj1 + noj2
+all = jokes + jokes_onesen + noj1 + noj2
 random.shuffle(all)
 
 #bot = ChatGPT()
@@ -209,7 +209,7 @@ n = 100
 i = 0
 for elem in all: ############################################################################
     print(i, n-df.shape[0])
-    j += 1
+    
     if j > 74:
         print("Reached max. Sleep for one hour.")
         time.sleep(900)
@@ -225,36 +225,41 @@ for elem in all: ###############################################################
     #prompt_number = df.shape[0]%len(prompts)
     #print(prompt_number)
     prompt = F'What kind of sentence is that: {elem}'
-    
-    try:
-        api.refresh_chat_page()
-        resp = api.send_message(prompt) 
-        # print(i ==df.shape[1]+1) # this does not work whith multiple iterations
-        print(F"{i}: {prompt} - {resp}")
-        
-        data = {"prompt": [prompt], "response": [resp]}
-        df2 = pd.DataFrame(data)
-        df = pd.concat([df,df2])
-        df.to_pickle(path) 
-        time.sleep(3)
-        i+=1
-    except TimeoutException as ex:
-        print(F"Oops! {ex}")
-        api.refresh_chat_page()
-        time.sleep(3)
-    except ValueError as err:
-        print(F"Oops! {err}")
-        print(type(err))
-        if "Too many requests" in str(err): 
-            print(err)#)"I'll try again in 15 Minutes")
-            #time.sleep(900)
-            #api.refresh_chat_page()
-            #raise
-        if "Only one message at a time":
-            i=i-1
-            #raise
-        else: 
-            print(F'something else: {err}')
+    if prompt in df.prompt.tolist():
+        i+=1 
+        print('prompt already in df')
+    else:
+        j += 1
+        try:
+            api.refresh_chat_page()
+            resp = api.send_message(prompt) 
+            time.sleep(3)
+            print(F"{i}: {prompt} - {resp}")
+            
+            # print(i ==df.shape[1]+1) # this does not work whith multiple iterations        
+            data = {"prompt": [prompt], "response": [resp]}
+            df2 = pd.DataFrame(data)
+            df = pd.concat([df,df2])
+            df.to_pickle(path) 
+            time.sleep(3)
+            i+=1
+        except TimeoutException as ex:
+            print(F"Oops! {ex}")
+            api.refresh_chat_page()
+            time.sleep(3)
+        except ValueError as err:
+            print(F"Oops! {err}")
+            print(type(err))
+            if "Too many requests" in str(err): 
+                print(err)#)"I'll try again in 15 Minutes")
+                #time.sleep(900)
+                #api.refresh_chat_page()
+                #raise
+            if "Only one message at a time":
+                i=i-1
+                #raise
+            else: 
+                print(F'something else: {err}')
 
 print("### reached the end ###")
 
