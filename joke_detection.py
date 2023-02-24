@@ -120,7 +120,7 @@ noj2 = [ # without picture
     "Why did the daughter go to the seance? To talk to her mother.",
     "Why was the cashier sent to jail? Because she held up a dress.",
     "Why did the man cross the road? To get to the other side.",
-    "Why did the man go to the doctor? Because it had a bite.",
+    "Why did the man go to the doctor? Because he had a bite.",
     "Why did the astronaut go to outer space? To see the moon.",
     "Why did the man put bananas in the blender? He wanted to make a smoothie.", 
     "Why don't schoolboys fight each other? They don't have the guts.",
@@ -189,6 +189,8 @@ no_jokes = [
 
 all = jokes + jokes_onesen + noj1 + noj2
 random.shuffle(all)
+all = ["Why did the man go to the doctor? Because he had a bite."]
+
 
 #bot = ChatGPT()
 #n = 1100 # number of generated jokes 
