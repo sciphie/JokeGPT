@@ -83,12 +83,12 @@ noj1 = [ # without wordplay, but with picutre
     "Why was the computer cold? Because the heater was broken.",
     "Why did the hipster burn his tongue? He drank hot coffee.",
     "Why don't oysters give to charity? Because they have no money.",
-    "Why did the computer go to the doctor? Because it had a sick.",
+    "Why did the computer go to the doctor? Because it was sick.",
     "Why did the banana go to the doctor? Because it was sick.",
     "Why did the coffee file a police report? Because it got robbed.",
     "Why did the golfer bring two pairs of pants? In case one gets damaged.", ###
     # "Why did the man put his money in the freezer? He wanted cold hard cash.",
-    "Why don't seagulls fly over the bay? Because then are mostly living in ports.",
+    "Why don't seagulls fly over the bay? Because they are mostly living in ports.",
     #"Why did the chicken go to the seance? To talk to the other side.",
     "Why was the belt sent to jail? Because it stole in a store.",
    # "Why did the chicken cross the road? To get to the other side.",
@@ -104,14 +104,14 @@ noj2 = [ # without picture
     "Why did the man turn red? Because he saw the neighbour dressing.",#"Why did the tomato turn red? Because it saw the salad dressing.",
     "Why was the child sad? Because it had many problems.",
     "Why don't scientists trust journalists? Because they make up everything.",
-    "Why did the woman go to the doctor? Because it was feeling crumbly.",
+    "Why did the woman go to the doctor? Because she was feeling crumbly.",
     "Why couldn't the man stand up by itself? Because he was drunk.",
     "Why did the driver call his insurance company? He had a jump in his car.",
     "Why did the kid cross the playground? To get to the other slide.",
     "Why was the student cold? Because it was winter.",
     "Why did the coworker burn his tongue? He drank his coffee too hot.",
     "Why don't millionaires give to charity? Because they're selfish.",
-    "Why did the man go to the doctor? Because it had a virus.",
+    "Why did the man go to the doctor? Because he had a virus.",
     "Why did the teacher go to the doctor? Because it wasn't peeling well.",
     "Why did the driver file a police report? Because it got robbed.",
     "Why did the athlete bring two pairs of pants? In case one gets dirty.",
@@ -182,19 +182,19 @@ no_jokes = [
     "Why was the computer cold? Because it was winter.",
     "Why was the student cold? Because the heater was broken.",
     "Why was the student cold? Because it was winter.",
-    "Why did the teacher go to the doctor? Because he wasn't peeling well.",
+    "Why did the teacher go to the doctor? Because he wasn't feeling well.",
     "Why don't oysters give to charity? Because they have no money.",
 ]
 
 
 all = jokes + jokes_onesen + noj1 + noj2
 random.shuffle(all)
-all = ["Why did the man go to the doctor? Because he had a bite."]
+#all = ["Why did the computer go to the doctor? Because it was sick.",]
 
 
 #bot = ChatGPT()
 #n = 1100 # number of generated jokes 
-path = 'joke_detection_new'############################################################################
+path = 'joke_detection_newnew'############################################################################
 try:
     df = pd.read_pickle(path)
 except:
