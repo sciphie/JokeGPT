@@ -96,7 +96,7 @@ noj1 = [ # without wordplay, but with picutre
     "Why did the chicken go to outer space? To see the moon.",
    # "Why did the man put bananas in the blender? He wanted to make liquid assets.",
     "Why don't skeletons fight each other? They are dead already.",
-    "What do you call an alligator in a vest? An investigator.",
+    "What do you call an alligator in a pullpver? A clothed alligator.",
 ]
 
 noj2 = [ # without picture
